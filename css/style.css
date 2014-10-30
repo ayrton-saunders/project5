@@ -1,0 +1,417 @@
+
+/////////////////////////
+////HOME PAGE STYLING////
+/////////////////////////
+
+
+//////////////////////////
+//CLOUD BACKGROUND IMAGE//
+//////////////////////////
+body {
+    height: 100%;
+}
+
+#background-wrap {   
+    background: -ms-linear-gradient(bottom, #FFFFFF 0%, #c9dbe9 100%);
+    background: -moz-linear-gradient(bottom, #FFFFFF 0%, #c9dbe9 100%);
+    background: -o-linear-gradient(bottom, #FFFFFF 0%, #c9dbe9 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #c9dbe9));
+    background: -webkit-linear-gradient(bottom, #FFFFFF 0%, #c9dbe9 100%);
+    background: linear-gradient(to top, #FFFFFF 0%, #c9dbe9 100%);
+    bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+
+#loginBox {
+    z-index: 9999 !important;
+    position: relative;
+    height: 50%;
+    width: 30%;
+    background: #c9dbe9;
+    margin-top: -22%;
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: 
+      0 1px 2px #fff, 
+      0 -1px 1px #666, 
+      inset 0 -1px 1px rgba(0,0,0,0.5),
+      inset 0 0 7px 4px rgba(255,255,255,.5);
+}
+
+.loginInputBox {
+    background: white; 
+    border: 1px solid #8FC9F7; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px 3px #8FC9F7; 
+    color: #666; 
+    outline: none; 
+    height:23px; 
+    width: 275px;
+}
+
+.divBtns {
+    display: inline-block;
+    width: 75px;
+    background: #8FC9F7;
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid #158FED;
+}
+
+.divBtns:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    transition: border 0.2s;
+}
+
+.formBtns {
+    width: 75px;
+    background: #B8D1E6;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #158FED;
+}
+
+.formBtns:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    transition: border 0.2s;
+}
+
+#blissPic {
+    height: 93px;
+    width: 150px;
+}
+
+#menuBar {
+    width: 16%;
+    float: left;
+    z-index: 9999 !important;
+    position: relative;
+}
+
+#header {
+    top: 15px;
+    height: 10%;
+    width: 60%;
+    position: absolute;
+    margin-left: 20%;
+    
+}
+
+#content {
+    z-index: 110;
+    width: 60%;
+    height: 100%;
+    top: 120px;
+    position: absolute;
+    margin-left: 20%;
+}
+
+.divDesign {
+    background: #c9dbe9;
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: 
+      0 1px 2px #fff, 
+      0 -1px 1px #666, 
+      inset 0 -1px 1px rgba(0,0,0,0.5),
+      inset 0 0 7px 4px rgba(255,255,255,.5);
+}
+
+.inputBox {
+    background: white; 
+    border: 1px solid #158FED; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px 3px #158FED; 
+    color: black; 
+    outline: none; 
+    height:30px; 
+    width: 210px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.textArea {
+    border: 1px solid #158FED; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px 3px #158FED; 
+    color: black; 
+    outline: none; 
+}
+
+.table {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+th {
+    color: blue;
+}
+
+#recipeLayout {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#recipeIngredients {
+    float: left;
+}
+
+#recipeImg {
+    float: right;
+}
+
+#backBtn {
+    float: left;
+}
+
+#recipeTitle {
+    font-size: 2em;
+    color: blue;
+}
+
+#confirmDelete {
+    z-index: 9999; 
+}
+
+#backBtn {
+    float: left;
+    margin-left: 9%;
+}
+
+
+/* KEYFRAMES */
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+/* ANIMATIONS */
+.x1 {
+    -webkit-animation: animateCloud 35s linear infinite;
+    -moz-animation: animateCloud 35s linear infinite;
+    animation: animateCloud 35s linear infinite;	
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    transform: scale(0.65);
+}
+.x2 {
+    -webkit-animation: animateCloud 20s linear infinite;
+    -moz-animation: animateCloud 20s linear infinite;
+    animation: animateCloud 20s linear infinite;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+.x3 {
+    -webkit-animation: animateCloud 30s linear infinite;
+    -moz-animation: animateCloud 30s linear infinite;
+    animation: animateCloud 30s linear infinite;	
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.x4 {
+    -webkit-animation: animateCloud 18s linear infinite;
+    -moz-animation: animateCloud 18s linear infinite;
+    animation: animateCloud 18s linear infinite;	
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+.x5 {
+    -webkit-animation: animateCloud 25s linear infinite;
+    -moz-animation: animateCloud 25s linear infinite;
+    animation: animateCloud 25s linear infinite;	
+    -webkit-transform: scale(0.55);
+    -moz-transform: scale(0.55);
+    transform: scale(0.55);
+}
+
+/* OBJECTS */
+.cloud {
+    background: #fff;
+    background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+    background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+    background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+    background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+    background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );	
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;	
+    -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    height: 120px;
+    position: relative;
+    width: 350px;
+}
+.cloud:after, .cloud:before {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+.cloud:after {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    height: 100px;
+    left: 50px;
+    top: -50px;
+    width: 100px;
+}
+.cloud:before {
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    width: 180px;
+    height: 180px;
+    right: 50px;
+    top: -90px;
+}
+
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:landscape) 
+{
+    #loginBox {
+        height: 75%;
+        width: 60%;
+        margin-top: -55%; 
+        font-size: 1.2em;
+    }
+    .loginInputBox {
+        height: 35px; 
+        width: 400px; 
+    }
+    .divBtns {
+        width: 75px;
+        background: #69B7F5;
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px solid #158FED;
+    }
+    .formBtns {
+        width: 65px;
+        height: 30px;
+        background: #158FED;
+        border-radius: 20px;
+        border: 2px solid #158FED;
+        text-align: center;
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    #blissPic {
+        height: 120px;
+        width: 193px;
+        margin-top: 1.5%;
+    }
+    #menuBar {
+        width: 20%;
+    }
+    #header {
+        top: 15px;
+        height: 20%;
+        width: 75%;
+        position: absolute;
+        margin-left: 23%;
+    }
+    #content {
+        z-index: 110;
+        width: 75%;
+        height: 100%;
+        top: 24%;
+        position: absolute;
+        margin-left: 23%;
+    }
+}
+
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:portrait) 
+{
+    #loginBox {
+        height: 55%;
+        width: 65%;
+        margin-top: -60%; 
+        font-size: 1.2em;
+    }
+    .loginInputBox {
+        height: 35px; 
+        width: 400px; 
+    }
+    .divBtns {
+        width: 75px;
+        background: #69B7F5;
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px solid #158FED;
+    }
+    .formBtns {
+        width: 65px;
+        height: 30px;
+        background: #158FED;
+        border-radius: 20px;
+        border: 2px solid #158FED;
+        text-align: center;
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    #blissPic {
+        height: 120px;
+        width: 193px;
+        margin-top: 2%;
+    }
+    #menuBar {
+        width: 22%;
+    }
+    #header {
+        top: 15px;
+        height: 15%;
+        width: 73%;
+        position: absolute;
+        margin-left: 25%;
+    }
+    #content {
+        z-index: 110;
+        width: 73%;
+        height: 100%;
+        top: 18%;
+        position: absolute;
+        margin-left: 25%;
+    }
+}
